@@ -46,21 +46,21 @@ export default function HomePage() {
   return (
     <div className="space-y-20 pb-20">
       {/* Hero Section with Deep Hero Background */}
-      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-950 py-32 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
-        <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px]" />
+      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-white py-32 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/75 via-slate-950/55 to-slate-950/80 backdrop-blur-[1px]" />
         <div className="relative max-w-4xl mx-auto text-center space-y-8 animate-in fade-in duration-700">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-900 text-xs font-extrabold border border-blue-300 shadow-md backdrop-blur-md">
-            <ShieldCheck className="w-4 h-4 text-blue-600 animate-pulse" /> Verified & Trusted Professionals
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 text-blue-200 text-xs font-extrabold border border-blue-400/40 shadow-lg backdrop-blur-md">
+            <ShieldCheck className="w-4 h-4 text-blue-400 animate-pulse" /> Verified & Trusted Professionals
           </div>
           
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-950 leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight drop-shadow-md">
             Expert Home Services, <br />
-            <span className="text-blue-700">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
               Delivered to Your Doorstep
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-800 font-bold max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-200 font-semibold max-w-2xl mx-auto drop-shadow-sm">
             Book reliable electricians, plumbers, cleaners, and beauty experts in seconds. Transparent pricing and guaranteed satisfaction.
           </p>
 
@@ -88,18 +88,18 @@ export default function HomePage() {
           </form>
 
           {/* Quick Stats */}
-          <div className="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center border-t border-slate-200/80">
-            <div className="p-4 rounded-xl hover:bg-white/40 transition-colors">
-              <p className="text-3xl font-bold text-slate-900">100%</p>
-              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1 font-semibold">Verified Experts</p>
+          <div className="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center border-t border-slate-800">
+            <div className="p-4 rounded-xl hover:bg-white/10 transition-colors">
+              <p className="text-3xl font-bold text-white">100%</p>
+              <p className="text-xs text-slate-300 uppercase tracking-wider mt-1 font-semibold">Verified Experts</p>
             </div>
-            <div className="p-4 rounded-xl hover:bg-white/40 transition-colors">
-              <p className="text-3xl font-bold text-slate-900">4.9/5</p>
-              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1 font-semibold">Customer Rating</p>
+            <div className="p-4 rounded-xl hover:bg-white/10 transition-colors">
+              <p className="text-3xl font-bold text-white">4.9/5</p>
+              <p className="text-xs text-slate-300 uppercase tracking-wider mt-1 font-semibold">Customer Rating</p>
             </div>
-            <div className="col-span-2 sm:col-span-1 p-4 rounded-xl hover:bg-white/40 transition-colors">
-              <p className="text-3xl font-bold text-slate-900">Fast</p>
-              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1 font-semibold">Instant Booking</p>
+            <div className="col-span-2 sm:col-span-1 p-4 rounded-xl hover:bg-white/10 transition-colors">
+              <p className="text-3xl font-bold text-white">Fast</p>
+              <p className="text-xs text-slate-300 uppercase tracking-wider mt-1 font-semibold">Instant Booking</p>
             </div>
           </div>
         </div>
