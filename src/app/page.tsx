@@ -46,21 +46,21 @@ export default function HomePage() {
   return (
     <div className="space-y-20 pb-20">
       {/* Hero Section with Deep Hero Background */}
-      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-900 py-32 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
-        <div className="absolute inset-0 bg-white/45 backdrop-blur-[1px]" />
+      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-950 py-32 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px]" />
         <div className="relative max-w-4xl mx-auto text-center space-y-8 animate-in fade-in duration-700">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 text-blue-800 text-xs font-bold border border-blue-200/80 shadow-md backdrop-blur-md hover:scale-105 transition-transform cursor-default">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-900 text-xs font-extrabold border border-blue-300 shadow-md backdrop-blur-md">
             <ShieldCheck className="w-4 h-4 text-blue-600 animate-pulse" /> Verified & Trusted Professionals
           </div>
           
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight drop-shadow-xs">
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-950 leading-tight">
             Expert Home Services, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-emerald-700">
+            <span className="text-blue-700">
               Delivered to Your Doorstep
             </span>
           </h1>
 
-          <p className="text-lg text-slate-700 font-medium max-w-2xl mx-auto drop-shadow-xs">
+          <p className="text-lg sm:text-xl text-slate-800 font-bold max-w-2xl mx-auto">
             Book reliable electricians, plumbers, cleaners, and beauty experts in seconds. Transparent pricing and guaranteed satisfaction.
           </p>
 
