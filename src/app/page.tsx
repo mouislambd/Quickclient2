@@ -46,26 +46,26 @@ export default function HomePage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-900 via-blue-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.2),transparent_50%)]" />
+      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-900 py-28 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-xs" />
         <div className="relative max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/20 text-blue-200 text-xs font-semibold backdrop-blur-md border border-blue-400/30">
-            <ShieldCheck className="w-4 h-4 text-blue-400" /> Verified & Trusted Professionals
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold border border-blue-200 shadow-xs">
+            <ShieldCheck className="w-4 h-4 text-blue-600" /> Verified & Trusted Professionals
           </div>
           
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
             Expert Home Services, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
               Delivered to Your Doorstep
             </span>
           </h1>
 
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Book reliable electricians, plumbers, cleaners, and beauty experts in seconds. Transparent pricing and guaranteed satisfaction.
           </p>
 
           {/* Search Bar */}
-          <form onSubmit={handleSearch} className="max-w-2xl mx-auto flex items-center bg-white p-2 rounded-2xl shadow-2xl">
+          <form onSubmit={handleSearch} className="max-w-2xl mx-auto flex items-center bg-white p-2 rounded-2xl shadow-xl border border-slate-200/80">
             <div className="flex-1 flex items-center px-3 gap-2">
               <Search className="w-5 h-5 text-slate-400 shrink-0" />
               <input
@@ -85,18 +85,18 @@ export default function HomePage() {
           </form>
 
           {/* Quick Stats */}
-          <div className="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center border-t border-blue-800/60">
+          <div className="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center border-t border-slate-200">
             <div>
-              <p className="text-3xl font-bold text-white">100%</p>
-              <p className="text-xs text-slate-400 uppercase tracking-wider mt-1">Verified Experts</p>
+              <p className="text-3xl font-bold text-slate-900">100%</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Verified Experts</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-white">4.9/5</p>
-              <p className="text-xs text-slate-400 uppercase tracking-wider mt-1">Customer Rating</p>
+              <p className="text-3xl font-bold text-slate-900">4.9/5</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Customer Rating</p>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="text-3xl font-bold text-white">Fast</p>
-              <p className="text-xs text-slate-400 uppercase tracking-wider mt-1">Instant Booking</p>
+              <p className="text-3xl font-bold text-slate-900">Fast</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Instant Booking</p>
             </div>
           </div>
         </div>
