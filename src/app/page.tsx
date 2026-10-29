@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* EXTRA SECTION 1: How It Works */}
-      <section className="bg-gradient-to-b from-slate-100/60 to-white py-20 border-y border-slate-200/60">
+      <section className="bg-gradient-to-b from-blue-50/20 via-slate-50/50 to-white py-20 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-16">
             <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
