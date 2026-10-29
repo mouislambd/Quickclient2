@@ -47,7 +47,7 @@ export default function HomePage() {
     <div className="space-y-16 pb-20">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-900 py-28 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
-        <div className="absolute inset-0 bg-white/90 backdrop-blur-xs" />
+        <div className="absolute inset-0 bg-white/65 backdrop-blur-[1px]" />
         <div className="relative max-w-4xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold border border-blue-200 shadow-xs">
             <ShieldCheck className="w-4 h-4 text-blue-600" /> Verified & Trusted Professionals
