@@ -319,21 +319,21 @@ export default function HomePage() {
 
       {/* EXTRA SECTION 3: Provider CTA Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-        <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.15),transparent_50%)]" />
+        <div className="bg-gradient-to-br from-blue-50/90 via-indigo-50/40 to-slate-50 border border-blue-100/80 rounded-3xl p-8 sm:p-12 text-slate-900 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.06),transparent_50%)]" />
           <div className="relative z-10 space-y-3 max-w-xl text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/20 text-white text-xs font-semibold backdrop-blur-md">
-              <Sparkles className="w-3.5 h-3.5" /> Grow Your Business
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold border border-blue-200">
+              <Sparkles className="w-3.5 h-3.5 text-blue-600" /> Grow Your Business
             </div>
-            <h2 className="text-3xl font-extrabold tracking-tight">Are You a Skilled Professional?</h2>
-            <p className="text-blue-100 text-sm">
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900">Are You a Skilled Professional?</h2>
+            <p className="text-slate-600 text-sm leading-relaxed">
               Join QuickServe as a service provider, connect with thousands of local customers, and grow your income effortlessly.
             </p>
           </div>
           <div className="relative z-10 shrink-0">
             <Link
               href="/register"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl shadow-xl hover:bg-blue-50 hover:scale-105 active:scale-95 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
             >
               <span>Join as Provider</span>
               <ArrowRight className="w-4 h-4" />
