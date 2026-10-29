@@ -109,8 +109,11 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Explore Categories</h2>
-            <p className="text-slate-600 text-sm mt-1">Find professional services tailored to your needs</p>
+            <div className="flex items-center gap-2.5">
+              <span className="w-2 h-6 bg-blue-600 rounded-full shadow-sm shadow-blue-500/50" />
+              <h2 className="text-2xl font-extrabold text-slate-900 tracking-tight">Explore Categories</h2>
+            </div>
+            <p className="text-slate-600 text-sm mt-1 ml-4.5">Find professional services tailored to your needs</p>
           </div>
           <Link href="/services" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group">
             View All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -145,8 +148,11 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Featured Services</h2>
-            <p className="text-slate-600 text-sm mt-1">Popular services booked by our customers</p>
+            <div className="flex items-center gap-2.5">
+              <span className="w-2 h-6 bg-indigo-600 rounded-full shadow-sm shadow-indigo-500/50" />
+              <h2 className="text-2xl font-extrabold text-slate-900 tracking-tight">Featured Services</h2>
+            </div>
+            <p className="text-slate-600 text-sm mt-1 ml-4.5">Popular services booked by our customers</p>
           </div>
           <Link href="/services" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group">
             Browse All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
