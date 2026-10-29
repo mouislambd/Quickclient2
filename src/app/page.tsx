@@ -46,41 +46,44 @@ export default function HomePage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-900 py-28 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
-        <div className="absolute inset-0 bg-white/65 backdrop-blur-[1px]" />
+      <section className="relative overflow-hidden bg-[url('/hero.png')] bg-cover bg-center text-slate-900 py-32 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
+        <div className="absolute inset-0 bg-white/45 backdrop-blur-[1px]" />
         <div className="relative max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold border border-blue-200 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 text-blue-800 text-xs font-bold border border-blue-200/80 shadow-md backdrop-blur-md">
             <ShieldCheck className="w-4 h-4 text-blue-600" /> Verified & Trusted Professionals
           </div>
           
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight drop-shadow-xs">
             Expert Home Services, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-emerald-700">
               Delivered to Your Doorstep
             </span>
           </h1>
 
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 font-medium max-w-2xl mx-auto drop-shadow-xs">
             Book reliable electricians, plumbers, cleaners, and beauty experts in seconds. Transparent pricing and guaranteed satisfaction.
           </p>
 
-          {/* Search Bar */}
-          <form onSubmit={handleSearch} className="max-w-2xl mx-auto flex items-center bg-white p-2 rounded-2xl shadow-xl border border-slate-200/80">
-            <div className="flex-1 flex items-center px-3 gap-2">
-              <Search className="w-5 h-5 text-slate-400 shrink-0" />
+          {/* Distinct Search Bar Style */}
+          <form onSubmit={handleSearch} className="max-w-2xl mx-auto flex items-center bg-white/95 backdrop-blur-md p-2.5 rounded-full shadow-2xl border-2 border-blue-500/30 hover:border-blue-500/60 transition-all">
+            <div className="flex-1 flex items-center px-4 gap-3">
+              <div className="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                <Search className="w-5 h-5" />
+              </div>
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search for cleaning, plumbing, AC repair..."
-                className="w-full py-2.5 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none"
+                placeholder="What service do you need today?"
+                className="w-full bg-transparent text-slate-900 placeholder:text-slate-400 text-sm font-medium focus:outline-none"
               />
             </div>
             <button
               type="submit"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors shadow-md shadow-blue-500/20 text-sm shrink-0 cursor-pointer"
+              className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-full transition-all shadow-lg shadow-blue-500/30 text-sm shrink-0 cursor-pointer flex items-center gap-2"
             >
-              Search
+              <span>Search Now</span>
+              <ArrowRight className="w-4 h-4" />
             </button>
           </form>
 
