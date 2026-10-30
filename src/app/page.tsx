@@ -107,15 +107,15 @@ export default function HomePage() {
 
       {/* Categories Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 bg-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-lg gap-4">
           <div>
             <div className="flex items-center gap-3">
-              <span className="w-2.5 h-7 bg-blue-600 rounded-full shadow-md shadow-blue-500/50" />
-              <h2 className="text-3xl font-black text-slate-950 tracking-tight">Explore Categories</h2>
+              <span className="w-2.5 h-7 bg-white rounded-full shadow-md" />
+              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Explore Categories</h2>
             </div>
-            <p className="text-slate-700 font-semibold text-sm mt-1.5 ml-5.5">Find professional services tailored to your needs</p>
+            <p className="text-slate-300 font-medium text-sm mt-1.5 ml-5.5">Find professional services tailored to your needs</p>
           </div>
-          <Link href="/services" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group">
+          <Link href="/services" className="text-sm font-semibold text-white hover:text-slate-200 flex items-center gap-1 group self-start sm:self-auto">
             View All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -146,15 +146,15 @@ export default function HomePage() {
 
       {/* Featured Services */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 bg-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-lg gap-4">
           <div>
             <div className="flex items-center gap-3">
-              <span className="w-2.5 h-7 bg-indigo-600 rounded-full shadow-md shadow-indigo-500/50" />
-              <h2 className="text-3xl font-black text-slate-950 tracking-tight">Featured Services</h2>
+              <span className="w-2.5 h-7 bg-white rounded-full shadow-md" />
+              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Featured Services</h2>
             </div>
-            <p className="text-slate-700 font-semibold text-sm mt-1.5 ml-5.5">Popular services booked by our customers</p>
+            <p className="text-slate-300 font-medium text-sm mt-1.5 ml-5.5">Popular services booked by our customers</p>
           </div>
-          <Link href="/services" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group">
+          <Link href="/services" className="text-sm font-semibold text-white hover:text-slate-200 flex items-center gap-1 group self-start sm:self-auto">
             Browse All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
